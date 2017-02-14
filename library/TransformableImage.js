@@ -98,7 +98,9 @@ export default class TransformableImage extends Component {
         maxScale={maxScale}
         contentAspectRatio={contentAspectRatio}
         onLayout={this.onLayout.bind(this)}
-        style={this.props.style}>
+        style={this.props.style}
+        mask={this.props.mask}
+        rotation={this.props.rotation}>
         <Image
           {...this.props}
           style={[this.props.style, {backgroundColor: 'transparent'}]}
