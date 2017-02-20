@@ -103,7 +103,7 @@ export default class TransformableImage extends Component {
         rotation={this.props.rotation}>
         <Image
           source={this.props.source}
-          style={[this.props.style, {backgroundColor: 'transparent'}]}
+          style={[this.props.style, {backgroundColor: 'transparent', flex:1}]}
           resizeMode={'contain'}
           onLoadStart={this.onLoadStart.bind(this)}
           onLoad={this.onLoad.bind(this)}
